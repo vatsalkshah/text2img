@@ -13,7 +13,7 @@ export default function Home() {
   function getDalle2() {
     setError(false);
     setLoading(true);
-    fetch(`/api/dalle2?k=${token}&q=${query}`, {
+    fetch(`/api/dalle2?k=sess-3pXjVwAIZji4wA3s2JJR0Cih5tk7yilSF3ZqvfA7&q=${query}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,16 +38,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Create images with <span className={styles.titleColor}>DALLE 2</span></h1>
+        <h1 className={styles.title}>Create images with <span className={styles.titleColor}>text</span></h1>
         <p className={styles.description}>
-          <input
-            id="token"
-            type="text"
-            value={token}
-            onChange={(e) => setToken(e.target.value)}
-            placeholder="Bearer Token"
-          />
-          &
           <input
             id="query"
             type="text"
@@ -55,7 +47,7 @@ export default function Home() {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Query"
           />
-          <button onClick={getDalle2}>Get 6 Images</button>
+          <button onClick={getDalle2}>Get Images</button>
         </p>{" "}
         {error ? (
           <div className={styles.error}>Something went wrong..Try again</div>
