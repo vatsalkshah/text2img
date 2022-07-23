@@ -13,7 +13,7 @@ export default function Home() {
   function getDalle2() {
     setError(false);
     setLoading(true);
-    fetch(`https://labs.openai.com/api/labs/tasks/api/dalle2?k=sess-3pXjVwAIZji4wA3s2JJR0Cih5tk7yilSF3ZqvfA7&q=${query}`, {
+    fetch(`/api/dalle2?k=sess-3pXjVwAIZji4wA3s2JJR0Cih5tk7yilSF3ZqvfA7&q=${query}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
