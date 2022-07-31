@@ -39,3 +39,9 @@ button:hover {
   cursor: pointer;
   color: white;
 }
+
+img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

@@ -38,6 +38,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+        <img src="https://cdn.discordapp.com/attachments/782551842663301120/1003207466328277023/rloop_logo.png"></img>
         <h1 className={styles.title}>Create images with <span className={styles.titleColor}>text</span></h1>
         <p className={styles.description}>
           <input
