@@ -40,3 +40,6 @@ button:hover {
   color: white;
 }
 
+input {
+  width: 30ch;
+}

@@ -47,7 +47,7 @@ export default function Home() {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Query"
+            placeholder="Your text ideas go here..."
           />
           <button onClick={getDalle2}>Get Images</button>
         </p>{" "}
