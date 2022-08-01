@@ -34,7 +34,22 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create DALLE 2 App</title>
+        <title>Create images with text</title>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FT6EVMBH3P"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '[Tracking ID]', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </Head>
 
       <main className={styles.main}>
