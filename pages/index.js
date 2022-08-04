@@ -13,7 +13,7 @@ export default function Home() {
   function getDalle2() {
     setError(false);
     setLoading(true);
-    fetch(`/api/dalle2?k=sess-ohijNJAIDPhJpfGuuSIebnfr9maBQCGszWRmEQik=${query}`, {
+    fetch(`/api/dalle2?k=sess-ohijNJAIDPhJpfGuuSIebnfr9maBQCGszWRmEQik&q=${query}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
