@@ -66,6 +66,9 @@ export default function Home() {
           />
           <button onClick={getDalle2}>Get Images</button>
         </p>{" "}
+        <p class="attention"> The bot is down for maintenance. We'll be rolling out access to people in private beta. Please register for it. </p>
+        <a href="https://tally.so/r/m68MxB" class="button">Register for Private Beta</a>
+
         {error ? (
           <div className={styles.error}>Something went wrong..Try again</div>
         ) : (
